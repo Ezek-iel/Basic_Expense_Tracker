@@ -1,2 +1,2 @@
 # Basic_Expense_Tracker
- A Basic Expense Tracker with Python and SQLite
+ A Basic Expense Tracker with ttkBootstrap and SQLite3

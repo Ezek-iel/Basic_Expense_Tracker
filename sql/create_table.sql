@@ -1,0 +1,1 @@
+CREATE TABLE expenses (Date text, Time text, Description text, Amount integer, income_or_expense integer, satisfied integer)
