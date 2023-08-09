@@ -1,1 +1,1 @@
-SELECT * FROM expenses
+SELECT * FROM expenses 

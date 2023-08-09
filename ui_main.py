@@ -67,8 +67,11 @@ add_expense_button.grid(column = 0, row = 0, padx = 10)
 refresh_button = tb.Button(transaction_frame, text = "Refresh", bootstyle = "info")
 refresh_button.grid(column = 1, row = 0, padx = 5)
 
+delete_last_button = tb.Button(transaction_frame, text = "Delete Last", bootstyle = "info")
+delete_last_button.grid(column = 2, row = 0, padx = 5)
+
 current_amount_label = tb.Label(transaction_frame, text = "Current Amount :-> ",font = ("Nunito",13))
-current_amount_label.grid(column = 2, row = 0, padx = 45)
+current_amount_label.grid(column = 3, row = 0, padx = 45)
 
 
 
