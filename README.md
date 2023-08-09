@@ -32,7 +32,7 @@
 
 ***You can contribute to the development of this simple GUI app, if you see an error please create a pull request and feel also free to clone this repository.***
 
-> [TTKBootstrap](www.ttkbootstrap.com) and [SQlite3](www.sqlite3.com) was used in this project.
+> [TTKBootstrap](https://ttkbootstrap.readthedocs.io) and [SQlite3](https://www.sqlite.org) Database was used in this project.
 
 TTkBootstrap can be installed via  
 ``` 
@@ -41,6 +41,6 @@ pip install ttkbootstrap
 SQlite3 is pre-installed with python already
 
 ### You can reach me *(Ezekiel)* at
- 1. [Linkedln](www.linkedln.com)
- 1. [Fiverr](www.fiverr.com)
+ [Linkedln](https://www.linkedin.com/in/akinfenwa-ezekiel-99a1aa2a)
+ 
 
