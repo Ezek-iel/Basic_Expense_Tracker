@@ -41,6 +41,6 @@ pip install ttkbootstrap
 SQlite3 is pre-installed with python already
 
 ### You can reach me *(Ezekiel)* at
- [Linkedln](https://www.linkedin.com/in/akinfenwa-ezekiel-99a1aa2a)
+ [Linkedln](https://www.linkedin.com/in/akinfenwa-ezekiel-99a1aa22a)
  
 
