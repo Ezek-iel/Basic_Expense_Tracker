@@ -3,7 +3,6 @@ from ttkbootstrap.constants import *
 from date_time import *
 import ttkbootstrap as tb
 from ttkbootstrap.dialogs import Messagebox
-from ttkbootstrap.toast import ToastNotification
 import database_actions
 
 
