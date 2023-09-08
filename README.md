@@ -4,13 +4,13 @@
 ![main.py](/img/main.png)
 > Preview Expenses
 
-![ui_request.py](/img/add_expense.png)
+![ui_request.py](/img/add_expense.png)t
 > Add Expense
 
 ## How to Use.
  1. Open the ```main.py``` file to see the main code
 
- 1. It has been updated to a notebook with 2 tabs, one for viewing ransactions and one for adding transactions
+ 1. It has been updated to a notebook with 2 tabs, one for viewing transactions and one for adding transactions
 
  ![main.py](/img/notebook.png)
 
