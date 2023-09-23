@@ -36,6 +36,7 @@ def delete_last():
         pass
 
 def delete_all():
+    """deletes all records in the database"""
     mb = Messagebox.yesno(message = "Are you sure you want to delete all records?")
     if mb == "Yes":
         delete_all_records()
@@ -46,7 +47,7 @@ def delete_all():
         
 
 # create all widgets here
-root = tb.Window(themename = "darkly")
+root = tb.Window(themename = "solar")
 root.geometry("1000x720")
 root.title("Expense Tracker")
 
@@ -186,9 +187,14 @@ def load():
     # -------------------------------------------------------------------------
 
     # Label showing the current amount available
-    current_amount_label = tb.Label(transaction_frame, text = "Current Amount :-> {0}  Dollars".format(amount),font = ("Nunito",13))
-    current_amount_label.grid(column = 5, row = 0, padx = 60)
-    # -------------------------------------------------------------------------
+    if amount > 5000:
+        current_amount_label = tb.Label(transaction_frame, text = "Current Amount :-> {0}  Naira".format(amount),font = ("Nunito",13), bootstyle = "Success")
+        current_amount_label.grid(column = 5, row = 0, padx = 60)
+        # -------------------------------------------------------------------------
+    else:
+        current_amount_label = tb.Label(transaction_frame, text = "Current Amount :-> {0}  Naira".format(amount),font = ("Nunito",13), bootstyle = "Success")
+        current_amount_label.grid(column = 5, row = 0, padx = 60)
+        # -------------------------------------------------------------------------
 
 load()
 #  UI of the second tab (Add Expense Tab)

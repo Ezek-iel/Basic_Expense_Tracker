@@ -32,12 +32,12 @@
 > [TTKBootstrap](www.ttkbootstrap.com), [SQlite3](www.sqlite3.com) and [auto_py_to_exe](www.pypi.com) was used in this project.
 
 TTkBootstrap can be installed via  
-``` 
+```python
 pip install ttkbootstrap
 ```
 
 auto_py_to_exe can be installed via
-```
+```python
 pip install auto_py_to_exe
 ```
 SQlite3 is pre-installed with python already
