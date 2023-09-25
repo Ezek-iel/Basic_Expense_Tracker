@@ -1,10 +1,12 @@
+# All imports here -> Tkinter, ttkbootstrap, indirectly: time and sqlite modules
+
+
 from tkinter import *
 import ttkbootstrap as tb
 from ttkbootstrap.constants import * 
 from ttkbootstrap.scrolled import ScrolledFrame
 from date_time import current_date,current_time
 from database_actions import show_all_records,delete_last_record,delete_all_records,add_record
-import os
 from ttkbootstrap.dialogs import Messagebox
 
 
@@ -22,7 +24,12 @@ def refresh():
 
 def help():
     """Opens the help file associated with this program"""
-    os.startfile("help.txt")
+    help_mb = Messagebox.ok(message="""
+        This is an expense tracker. you can add an expense by pressing the
+        add expense button. you can also delete all expenses as 
+        well 
+""",
+         title="Help Info"   )
 
 def delete_last():
     """This deletes the last record in the expense tracker file"""
@@ -50,6 +57,7 @@ def delete_all():
 root = tb.Window(themename = "solar")
 root.geometry("1000x720")
 root.title("Expense Tracker")
+root.iconbitmap("icon.ico")
 
 
 # The title shows the title of the program and the current date
@@ -62,7 +70,7 @@ title_label.grid(row = 0, column = 0, pady = 15, padx = 20)
 date_label = tb.Label(title_frame, text = current_date, font = ("Nunito",12,UNDERLINE))
 date_label.grid(row = 0, column = 1, pady = 15, padx =125)
 
-    # ----------------------------------------------------------------
+# ----------------------------------------------------------------
 
 overall_notebook = tb.Notebook(root)
 overall_notebook.pack(pady = 10)
@@ -70,6 +78,7 @@ overall_notebook.pack(pady = 10)
 add_expense_tab = Frame(root)
 view_expense_tab = Frame(root)
 def load():
+    """ The load function loads all the expenses"""
       
     view_scrolled_frame = ScrolledFrame(view_expense_tab, width = 900, height = 550)
     view_scrolled_frame.grid(row = 0, column = 0)
@@ -189,11 +198,11 @@ def load():
     # Label showing the current amount available
     if amount > 5000:
         current_amount_label = tb.Label(transaction_frame, text = "Current Amount :-> {0}  Naira".format(amount),font = ("Nunito",13), bootstyle = "Success")
-        current_amount_label.grid(column = 5, row = 0, padx = 60)
+        current_amount_label.grid(column = 5, row = 0, padx = 50)
         # -------------------------------------------------------------------------
     else:
-        current_amount_label = tb.Label(transaction_frame, text = "Current Amount :-> {0}  Naira".format(amount),font = ("Nunito",13), bootstyle = "Success")
-        current_amount_label.grid(column = 5, row = 0, padx = 60)
+        current_amount_label = tb.Label(transaction_frame, text = "Current Amount :-> {0}  Naira. Be Careful, Spend Wisely".format(amount),font = ("Nunito",13), bootstyle = "Warning")
+        current_amount_label.grid(column = 5, row = 0, padx = 50)
         # -------------------------------------------------------------------------
 
 load()
