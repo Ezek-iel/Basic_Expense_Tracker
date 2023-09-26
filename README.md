@@ -30,7 +30,7 @@
 
 ***You can contribute to the development of this simple GUI app, if you see an error please create a pull request and feel also free to clone this repository.***
 
-> [TTKBootstrap](www.ttkbootstrap.com), [SQlite3](www.sqlite3.com) and [auto_py_to_exe](www.pypi.com) was used in this project.
+> [TTKBootstrap](https://www.ttkbootstrap.readthedocs.io), [SQlite3](https://www.sqlite.com) and [auto_py_to_exe](https://pypi.org/project/auto-py-to-exe/) was used in this project.
 
 TTkBootstrap can be installed via  
 ```python
