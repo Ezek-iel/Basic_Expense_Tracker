@@ -8,7 +8,7 @@
 > Add Expense
 
 ## How to Use.
- 1. Open the ```main.py``` file to see the main code
+ 1. Open the [```main.py```](main.py)file to see the main code
 
  1. It has been updated to a notebook with 2 tabs, one for viewing transactions and one for adding transactions
 
@@ -66,7 +66,7 @@ root.title("Expense Tracker") # Line 56
 # Line 53 to 56 of main.py
 ```
 
- > For point 5 in the Things to Note section, you could change the limit number here
+ > For point 5 in the [Things to Note section](#things-to-note), you could change the limit number here
  ```python
  # Label showing the current amount available
     if amount > 5000:

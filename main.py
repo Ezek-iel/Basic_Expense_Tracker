@@ -19,12 +19,12 @@ def request():
 
     
 def refresh():
-    """ This restarts the program hereby updating the views from the database"""
+    """ This reloads the expense frame hereby updating the views from the database"""
     load()
 
 def help():
     """Opens the help file associated with this program"""
-    help_mb = Messagebox.ok(message="""
+    Messagebox.ok(message="""
         This is an expense tracker. you can add an expense by pressing the
         add expense button. you can also delete all expenses as 
         well 
@@ -343,8 +343,8 @@ def add_expense_ui():
 add_expense_ui()
 
 
-overall_notebook.add(view_expense_tab, text = "VIEW TRANSACTIONS")
-overall_notebook.add(add_expense_tab,text = "ADD TRANSACTIONS")
+overall_notebook.add(view_expense_tab, text = "View Transactions")
+overall_notebook.add(add_expense_tab,text = "Add Transactions")
 
 
 root.mainloop()
